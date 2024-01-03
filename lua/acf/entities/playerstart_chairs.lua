@@ -19,8 +19,9 @@ local function AddVehicle(Class, Data)
 
 	list.Set("Vehicles", Class, Entry)
 end
-local function HandlePHXSeatAnimation( vehicle, player )
-	return player:SelectWeightedSequence( ACT_HL2MP_SIT )
+
+local function HandlePHXSeatAnimation(_, Player)
+	return Player:SelectWeightedSequence(ACT_HL2MP_SIT)
 end
 
 local function HandlePHXVehicleAnimation(_, Player)
